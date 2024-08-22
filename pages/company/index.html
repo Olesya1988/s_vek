@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./desktop.css" />
+    <title>О компании</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Верхнее меню -->
+      <header class="header">
+        <a class="logo__link" href="../../index.html"
+          ><img
+            src="../../images/logo.png"
+            alt="Логотип компании Строительный век"
+            class="logo"
+        /></a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list__item">
+              <a href="../../index.html" style="text-decoration: underline">Главная</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../projects/index.html">Услуги</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../hangars/index.html">Проекты</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../company/index.html">О компании</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../contacts/index.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <a href="../menu/company-menu.html"
+          ><img
+            class="menu__burger"
+            src="../../images/burger.svg"
+            alt="Меню бургер"
+        /></a>
+        <div class="contacts">
+          <div class="contacts__item">Москва</div>
+          <div class="contacts__item">
+            <a class="contacts__item__phone" href="tel:+74959916000"
+              >+7 (495) 991-60-00</a
+            >
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <!-- О компании -->
+        <section class="company">
+          <div class="company__header">о компании</div>
+          <div class="company__container">
+            <div class="company__head company__container__item">
+              <img
+                class="company__head__img"
+                src="../../images/head.png"
+                alt="Фотография директора компании Строительный век"
+              />
+              <div class="company__head__speech">
+                “Дорогие коллеги, друзья! Это честь работать в строительной
+                отрасли, развивать инфраструктуру, создавать комфортную и
+                технологичную среду!”
+              </div>
+              <div class="company__head__caption">
+                Директор ООО «Строительный век»<br />
+                Константин Сергеевич Поляков
+              </div>
+            </div>
+            <div class="company__results company__container__item">
+              <div class="company__results__projects">
+                <div class="company__age">
+                  12 лет<span>назад была основана компания</span>
+                </div>
+                <div class="company__numbers">
+                  За это время было построено 286 000 м2.
+                </div>
+                <button type="submit" class="company__projects">
+                  <a href="../hangars/index.html">Смотреть проекты</a>
+                </button>
+              </div>
+              <div class="company__results__feedback">
+                <div class="feedback__text">
+                  Мы всегда готовы ответить на ваши вопросы
+                </div>
+                <button
+                  type="submit"
+                  class="feedback__button"
+                  onclick="openForm()"
+                >
+                  Заказать обратный звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Подвал -->
+      <footer class="footer">
+        <div class="footer__logo__contacts">
+          <a class="footer__logo__link" href="./index.html"
+            ><img
+              src="../../images/logo.png"
+              alt="Логотип компании Строительный век"
+              class="footer__logo"
+          /></a>
+          <div class="footer__phone">
+            <a class="footer__phone__item" href="tel:+74959916000"
+              >+7 (495) 991-60-00</a
+            >
+          </div>
+          <div class="footer__email">
+            <a href="mailto:s_vek@list.ru">s_vek@list.ru</a>
+          </div>
+        </div>
+        <ul class="footer__menu__list">
+          <li class="footer__menu__item"><a href="#">Главная</a></li>
+          <li class="footer__menu__item">
+            <a href="./pages/company/index.html">О компании</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="./pages/projects/index.html">Услуги</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="./pages/hangars/index.html">Проекты</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="./pages/contacts/index.html">Контакты</a>
+          </li>
+          <li class="footer__menu__item"><a href="#">Сертификаты</a></li>
+          <li class="footer__menu__item"><a href="#partners">Партнеры</a></li>
+          <li class="footer__menu__item"><a href="#news">Новости</a></li>
+          <li class="footer__menu__item"><a href="#offices">Адрес</a></li>
+          <li class="footer__menu__item"><a href="#offices">Карта</a></li>
+        </ul>
+        <ul class="footer__offices__list">
+          <li class="footer__offices__item">
+            <div class="footer__offices__town">москва</div>
+            <div class="footer__offices__address">
+              Цветной бульвар, 11. стр. 6
+            </div>
+          </li>
+          <li class="footer__offices__item">
+            <div class="footer__offices__town">новосибирск</div>
+            <div class="footer__offices__address">ул. Октябрьская, 10а</div>
+          </li>
+        </ul>
+        <div class="requisites">
+          ООО “Строительный век” ОГРН 52989555 ИНН 689123456987
+        </div>
+      </footer>
+      <!-- Подвал для мобильной версии -->
+      <footer class="footer__mobile">
+        <div class="footer__mobile__logo">
+          <a class="footer__mobile__logo__link" href="../../index.html"
+            ><img
+              src="../../images/logo.png"
+              alt="Логотип компании Строительный век"
+              class="footer__mobile__logo__img"
+          /></a>
+        </div>
+        <div class="footer__mobile__email">
+          <a href="mailto:s_vek@list.ru">s_vek@list.ru</a>
+        </div>
+        <ul class="footer__mobile__phones">
+          <li class="footer__mobile__phone">
+            <a class="footer__mobile__phone__item" href="tel:+74959916000"
+              >+7 (495) 991-60-00</a
+            >
+          </li>
+          <li class="footer__mobile__phone">
+            <a class="footer__mobile__phone__item" href="tel:+73833830338"
+              >+7 (383) 383-03-38</a
+            >
+          </li>
+        </ul>
+        <ul class="footer__mobile__towns">
+          <li class="footer__mobile__town">москва</li>
+          <li class="footer__mobile__town">новосибирск</li>
+        </ul>
+        <div class="footer__mobile__requisites">
+          ООО “Строительный век” ОГРН 52989555 ИНН 689123456987
+        </div>
+      </footer>
+    </div>
+    <!-- Форма обратной связи -->
+    <div class="popup hidden">
+      <div class="popup__container">
+        <button class="popup__close" type="submit" onclick="closeForm()">
+          <span class="visually-hidden">Кнопка закрытия окна</span>
+        </button>
+        <h3 class="popup__header">оставьте свой номер и мы вам перезвоним!</h3>
+        <form class="popup__content">
+          <label>
+            <input
+              type="text"
+              name="name"
+              class="popup__content__item name"
+              placeholder="Имя"
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              name="phone"
+              class="popup__content__item phone"
+              placeholder="Телефон"
+            />
+          </label>
+          <button class="popup__button" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function openForm() {
+        document.querySelector(".popup").classList.remove("hidden");
+      }
+
+      function closeForm() {
+        document.querySelector(".popup").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>

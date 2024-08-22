@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <title>Меню</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Меню -->
+      <footer class="menu">
+        <div class="menu__container">
+          <div class="menu__logo">
+            <a class="menu__logo__link" href="../../index.html"
+              ><img
+                src="../../images/logo.png"
+                alt="Логотип компании Строительный век"
+                class="menu__logo__img"
+            /></a>
+          </div>
+          <div class="menu__close">
+            <a class="menu__close__link" href="../company/index.html"
+              ><img
+                src="../../images/close.svg"
+                alt="Кнопка закрытия меню"
+                class="menu__close__img"
+            /></a>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__list__item">
+              <a href="../../index.html">Главная</a>
+            </li>
+
+            <li class="menu__list__item">
+              <a href="../projects/index.html">Услуги</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../hangars/index.html">Проекты</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../company/index.html">О компании</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../contacts/index.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu__contacts">
+            <ul class="menu__contacts__item">
+              <li class="contacts__town">Москва</li>
+              <li class="contacts__phone">+7 (495) 991-60-00</li>
+            </ul>
+            <ul class="menu__contacts__item">
+              <li class="contacts__town">Новосибирск</li>
+              <li class="contacts__phone">+7 (383) 383-03-38</li>
+            </ul>
+            <li class="menu__contacts__item">s_vek@list.ru</li>
+          </ul>
+        </div>
+        <div class="menu__intro">
+          Практикуем, изготавливаем, монтируем ангары, терминалы и складские
+          помещения по всей России. Строим торговые комплексы, рынки, сельхоз
+          здания, зернохранилища, автомойки, СТО
+        </div>
+        <div class="menu__buttons">
+          <button type="submit" class="menu__button view__projects">
+            <a href="../hangars/index.html">Смотреть проекты</a>
+          </button>
+          <button
+            type="submit"
+            class="menu__button submit__application"
+            onclick="openForm()"
+          >
+            Оставить заявку
+          </button>
+        </div>        
+      </footer>
+    </div>
+    <!-- Форма обратной связи -->
+    <div class="popup hidden">
+      <div class="popup__container">
+        <button class="popup__close" type="submit" onclick="closeForm()">
+          <span class="visually-hidden">Кнопка закрытия окна</span>
+        </button>
+        <h3 class="popup__header">оставьте свой номер и мы вам перезвоним!</h3>
+        <form class="popup__content">
+          <label>
+            <input
+              type="text"
+              name="name"
+              class="popup__content__item name"
+              placeholder="Имя"
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              name="phone"
+              class="popup__content__item phone"
+              placeholder="Телефон"
+            />
+          </label>
+          <button class="popup__button" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // Функция открытия окна обратной связи
+      function openForm() {
+        document.querySelector(".popup").classList.remove("hidden");
+      }
+      // Функция закрытия окна обратной связи
+      function closeForm() {
+        document.querySelector(".popup").classList.add("hidden");
+      }
+
+      // Функция открытия меню
+      function openMenu() {
+        document.querySelector(".menu__list").classList.add("show");
+        document.querySelector(".menu__burger__close").classList.add("show");
+      }
+
+      // Функция закрытия меню
+      function closeMenu() {
+        document.querySelector(".menu__list").classList.remove("show");
+        document.querySelector(".menu__burger__close").classList.remove("show");
+      }
+    </script>
+  </body>
+</html>

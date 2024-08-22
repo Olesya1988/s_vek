@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./desktop.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div id="root">
+        <!-- Верхнее меню -->
+        <header class="header">
+            <a class="logo__link" href="./index.html"><img src="./images/logo.png" alt="Логотип компании Строительный век" class="logo" /></a>            
+            <div class="menu">                                
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#" style="text-decoration: underline;">Главная</a></li>
+                    <li class="menu__list__item"><a href="./pages/projects/index.html">Услуги</a></li>
+                    <li class="menu__list__item"><a href="./pages/hangars/index.html">Проекты</a></li>
+                    <li class="menu__list__item"><a href="./pages/company/index.html">О компании</a></li>
+                    <li class="menu__list__item"><a href="./pages/contacts/index.html">Контакты</a></li>
+                </ul>
+            </div>
+            <a href="./pages/menu/index.html"><img class="menu__burger" src="./images/burger.svg" alt="Меню бургер"></a>
+            <div class="contacts">
+                <div class="contacts__item">Москва</div>
+                <div class="contacts__item">
+                    <a class="contacts__item__phone" href="tel:+74959916000">+7 (495) 991-60-00</a>
+                    </div>
+            </div>
+        </header>
+        <main class="content">
+            <!-- Интро -->
+            <section class="intro">
+                <div class="intro__header">
+                    <div class="intro__header__item">строительство складов</div>
+                    <div class="intro__header__item">286 000 м2<span class="intro__header__item__text">построено за 12 лет</span></div>        
+                </div>
+                <div class="intro__content">Практикуем, изготавливаем, монтируем ангары, терминалы и складские помещения по всей России. Строим торговые комплексы, рынки, сельхоз здания, зернохранилища, автомойки, СТО</div>
+                <div class="intro__footer">                    
+                    <button type="submit" class="intro__footer__button view__projects"><a href="./pages/hangars/index.html">Смотреть проекты</a></button>
+                    <button type="submit" class="intro__footer__button submit__application" onclick="openForm()">Оставить заявку</button>                    
+                </div>
+            </section>
+            <!-- Что мы строим -->
+            <section class="projects">
+                <div class="section__header projects__header">что мы строим</div>
+                <div class="projects__button next" onclick="swipeNextProject()"></div>
+                <div class="projects__button back" onclick="swipeBackProject()"></div>
+                <ul class="projects__content">
+                    <li class="project active__project">
+                        <div class="project__img project__1"></div>
+                        <div class="project__content">
+                            <div class="project__content__title">спортивные сооружения</div>
+                            <div class="project__content__description">Строим торговые комплексы, рынки, сельхоз здания, зернохранилища, автомойки, СТО</div>
+                            <div class="project__content__result">1200 кв.м.</div> 
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__img project__2"></div>
+                        <div class="project__content">
+                            <div class="project__content__title">логистические центры</div>
+                            <div class="project__content__description">Строим торговые комплексы, рынки, сельхоз здания, зернохранилища, автомойки, СТО</div>
+                            <div class="project__content__result">1500 кв.м.</div> 
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__img project__3"></div>
+                        <div class="project__content">
+                            <div class="project__content__title">производственные помещения</div>
+                            <div class="project__content__description">Строим торговые комплексы, рынки, сельхоз здания, зернохранилища, автомойки, СТО</div>
+                            <div class="project__content__result">1200 кв.м.</div> 
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__img project__1"></div>
+                        <div class="project__content">
+                            <div class="project__content__title">спортивные сооружения</div>
+                            <div class="project__content__description">Строим торговые комплексы, рынки, сельхоз здания, зернохранилища, автомойки, СТО</div>
+                            <div class="project__content__result">1200 кв.м.</div> 
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Реализованные проекты -->
+            <section class="results">
+                <div class="section__header results__header">реализованные проекты</div>
+                <ul class="results__content">
+                    <li class="result">
+                        <div class="result__img result__1"></div>
+                        <div class="result__content">
+                            <div class="result__content__title highlight">каркасно-тентовое укрытие</div>
+                            <div class="result__content__area">Саратовская область</div>
+                            <div class="result__content__conditions">
+                                <div class="conditions__item">Снеговой район<span class="highlight"> 3</span></div>
+                                <div class="conditions__item">Ветровой район<span class="highlight"> 3</span></div>
+                            </div> 
+                            <div class="result__content__sizes">
+                                <div class="sizes__item">Ширина<span class="highlight"> 20 м</span></div>
+                                <div class="sizes__item">Длина<span class="highlight"> 30 м</span></div>
+                            </div>                         
+                            <div class="result__content__date">
+                            Дата постройки<span class="highlight"> 08.02.2024</span>
+                            </div> 
+                        </div>
+                    </li>
+                    <li class="result">
+                        <div class="result__img result__1"></div>
+                        <div class="result__content">
+                            <div class="result__content__title highlight">производственное укрытие</div>
+                            <div class="result__content__area">Тюменская область</div>
+                            <div class="result__content__conditions">
+                                <div class="conditions__item">Снеговой район<span class="highlight"> 4</span></div>
+                                <div class="conditions__item">Ветровой район<span class="highlight"> 1</span></div>
+                            </div> 
+                            <div class="result__content__sizes">
+                                <div class="sizes__item">Ширина<span class="highlight"> 26,5 м</span></div>
+                                <div class="sizes__item">Длина<span class="highlight"> 56,5 м</span></div>
+                            </div>                         
+                            <div class="result__content__date">
+                            Дата постройки<span class="highlight"> 08.02.2024</span>
+                            </div> 
+                        </div>
+                    </li>
+                    <li class="result">
+                        <div class="result__img result__1"></div>
+                        <div class="result__content">
+                            <div class="result__content__title highlight">каркасно-тентовый склад</div>
+                            <div class="result__content__area">Оренбургская область</div>
+                            <div class="result__content__conditions">
+                                <div class="conditions__item">Снеговой район<span class="highlight"> 3</span></div>
+                                <div class="conditions__item">Ветровой район<span class="highlight"> 3</span></div>
+                            </div> 
+                            <div class="result__content__sizes">
+                                <div class="sizes__item">Ширина<span class="highlight"> 30 м</span></div>
+                                <div class="sizes__item">Длина<span class="highlight"> 48 м</span></div>
+                            </div>                         
+                            <div class="result__content__date">
+                            Дата постройки<span class="highlight"> 08.02.2024</span>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>   
+            </section>
+            <!-- Наши партнёры -->
+            <section class="partners" id="partners">
+                <div class="section__header partners__header">наши партнеры</div>
+                <div class="partners__button next" onclick="swipeNextPartner()"></div>
+                <div class="partners__button back" onclick="swipeBackPartner()"></div>
+                <ul class="partners__content">
+                    <li class="partner active__partner">
+                        <div class="partner__img partner__1"></div>
+                    </li>
+                    <li class="partner">
+                        <div class="partner__img partner__2"></div>
+                    </li>
+                    <li class="partner">
+                        <div class="partner__img partner__3"></div>
+                    </li>
+                    <li class="partner">
+                        <div class="partner__img partner__4"></div>
+                    </li>
+                    <li class="partner">
+                        <div class="partner__img partner__5"></div>
+                    </li>
+                    <li class="partner">
+                        <div class="partner__img partner__6"></div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Новости -->
+            <section class="news" id="news">
+                <div class="section__header news__header">новости</div>
+                <div class="news__button__container">
+                    <button class="news__button">Все новости</button>
+                </div>                
+                <ul class="news__content">
+                    <li class="news__item news__1">
+                        <div class="news__item__container">
+                            <div class="news__item__title">Новый физкультурный комплекс открылся в Можге</div>
+                            <div class="news__item__description">Ранее мы уже писали, что в рамках Федеральной программы “Спорт — норма жизни” в г. Можга нами ведется возведение...</div> 
+                        </div>
+                        <div class="news__item__date">
+                            <div class="news__item__number">29</div>
+                            <div class="news__item__time">03.23</div>
+                        </div>
+                    </li>
+                    <li class="news__item news__1">
+                        <div class="news__item__container">
+                            <div class="news__item__title">крытой ледовой площадке в талнахе быть!</div>
+                            <div class="news__item__description">Возвели современную ледовую площадку в Талнахе. Спортивное сооружение состоит из трех основных элементов: сам каток, ...</div> 
+                        </div>
+                        <div class="news__item__date">
+                            <div class="news__item__number">11</div>
+                            <div class="news__item__time">07.23</div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Наши офисы -->
+            <section class="offices" id="offices">
+                <div class="section__header offices__header">наши офисы</div>
+                <div class="offices__content">
+                    <ul class="offices__list">
+                        <li class="office">
+                            <div class="office__town">москва</div>
+                            <div class="office__phone"><a class="office__phone__item" href="tel:+74959916000">+7 (495) 991-60-00</a></div>
+                            <div class="office__address">Цветной бульвар, 11. стр. 6</div>
+                        </li>
+                        <li class="office">
+                            <div class="office__town">новосибирск</div>
+                            <div class="office__phone"><a class="office__phone__item" href="tel:+73833830338">+7 (383) 383-03-38</a></div>
+                            <div class="office__address">ул. октябрьская, 10а</div>
+                        </li>
+                    </ul>
+                    <div class="offices__img">
+                        <iframe
+                            class="map__item active__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.343113493789!2d37.61811777616264!3d55.769912490673974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6a2b8eeac7%3A0xc5f29ae7b895c54d!2z0KbQstC10YLQvdC-0Lkg0LEt0YAsIDExLCDRgdGC0YAuIDYsINCc0L7RgdC60LLQsCwgMTI3MDUx!5e0!3m2!1sru!2sru!4v1723914932510!5m2!1sru!2sru"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                    </div>
+            </section>
+        </main>
+        <!-- Подвал -->
+        <footer class="footer">            
+            <div class="footer__logo__contacts">
+                <a class="footer__logo__link" href="./index.html"><img src="./images/logo.png" alt="Логотип компании Строительный век" class="footer__logo" /></a>                
+                <div class="footer__phone"><a class="footer__phone__item" href="tel:+74959916000">+7 (495) 991-60-00</a></div>
+                <div class="footer__email"><a href="mailto:s_vek@list.ru">s_vek@list.ru</a></div>
+            </div>
+            <ul class="footer__menu__list">
+                <li class="footer__menu__item"><a href="#">Главная</a></li>
+                <li class="footer__menu__item"><a href="./pages/company/index.html">О компании</a></li>
+                <li class="footer__menu__item"><a href="./pages/projects/index.html">Услуги</a></li>
+                <li class="footer__menu__item"><a href="./pages/hangars/index.html">Проекты</a></li>
+                <li class="footer__menu__item"><a href="./pages/contacts/index.html">Контакты</a></li>
+                <li class="footer__menu__item"><a href="#">Сертификаты</a></li>
+                <li class="footer__menu__item"><a href="#partners">Партнеры</a></li>
+                <li class="footer__menu__item"><a href="#news">Новости</a></li>
+                <li class="footer__menu__item"><a href="#offices">Адрес</a></li>
+                <li class="footer__menu__item"><a href="#offices">Карта</a></li>
+            </ul>
+            <ul class="footer__offices__list">
+                <li class="footer__offices__item">
+                    <div class="footer__offices__town">москва</div>
+                    <div class="footer__offices__address">Цветной бульвар, 11. стр. 6</div>
+                </li>
+                <li class="footer__offices__item">
+                    <div class="footer__offices__town">новосибирск</div>
+                    <div class="footer__offices__address">ул. Октябрьская, 10а</div>
+                </li>
+            </ul>
+            <div class="requisites">ООО “Строительный век”  ОГРН 52989555 ИНН 689123456987</div>
+        </footer>
+        <!-- Подвал для мобильной версии -->
+        <footer class="footer__mobile">            
+            <div class="footer__mobile__logo">
+                <a class="footer__mobile__logo__link" href="./index.html"
+                  ><img
+                    src="./images/logo.png"
+                    alt="Логотип компании Строительный век"
+                    class="footer__mobile__logo__img"
+                /></a>
+              </div>
+              <div class="footer__mobile__email">
+                <a href="mailto:s_vek@list.ru">s_vek@list.ru</a>
+              </div>              
+              <ul class="footer__mobile__phones">
+                <li class="footer__mobile__phone"><a class="footer__mobile__phone__item" href="tel:+74959916000">+7 (495) 991-60-00</a></li>
+                <li class="footer__mobile__phone"><a class="footer__mobile__phone__item" href="tel:+73833830338">+7 (383) 383-03-38</a></li>
+                
+              </ul>
+              <ul class="footer__mobile__towns">
+                <li class="footer__mobile__town">москва</li>
+                <li class="footer__mobile__town">новосибирск</li>
+              </ul>
+              <div class="footer__mobile__requisites">ООО “Строительный век”  ОГРН 52989555 ИНН 689123456987</div>
+        </footer>
+        
+        
+    </div>
+    <!-- Форма обратной связи -->
+    <div class="popup hidden">
+        <div class="popup__container">
+          <button class="popup__close" type="submit" onclick="closeForm()">
+            <span class="visually-hidden">Кнопка закрытия окна</span>
+          </button>
+          <h3 class="popup__header">
+            оставьте свой номер и мы вам перезвоним!
+          </h3>
+          <form class="popup__content">
+            <label>
+              <input
+                type="text"
+                name="name"
+                class="popup__content__item name"
+                placeholder="Имя"
+              />
+            </label>
+            <label>
+              <input
+                type="text"
+                name="phone"
+                class="popup__content__item phone"
+                placeholder="Телефон"
+              />
+            </label>
+            <button class="popup__button" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        // Функция открытия окна обратной связи
+        function openForm() {
+            document.querySelector('.popup').classList.remove('hidden');
+        }
+        // Функция закрытия окна обратной связи
+        function closeForm() {            
+            document.querySelector('.popup').classList.add('hidden');           
+        }  
+
+        // Функция swipe
+        let activeProject;
+        let activePartner;        
+        function swipeNextProject() {            
+            let arr = Array.from(document.querySelectorAll(".project"));
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].classList.contains('active__project')) {
+                    activeProject = i + 1;
+                    activeProject === 4 ? activeProject = 0 : activeProject;
+                }
+            }
+            arr.forEach((el) => el.classList.remove("active__project"));
+            arr[activeProject].classList.add('active__project');
+        }
+
+        function swipeBackProject() {            
+            let arr = Array.from(document.querySelectorAll(".project"));
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].classList.contains('active__project')) {
+                    activeProject = i - 1;
+                    activeProject === -1 ? activeProject = 3 : activeProject;
+                }
+            }
+            arr.forEach((el) => el.classList.remove("active__project"));
+            arr[activeProject].classList.add('active__project');
+        }
+
+        function swipeNextPartner() {            
+            let arr = Array.from(document.querySelectorAll(".partner"));
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].classList.contains('active__partner')) {
+                    activePartner = i + 1;
+                    activePartner === 4 ? activePartner = 0 : activePartner;
+                }
+            }
+            arr.forEach((el) => el.classList.remove("active__partner"));
+            arr[activePartner].classList.add('active__partner');
+        }
+
+        function swipeBackPartner() {            
+            let arr = Array.from(document.querySelectorAll(".partner"));
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].classList.contains('active__partner')) {
+                    activePartner = i - 1;
+                    activePartner === -1 ? activePartner = 3 : activePartner;
+                }
+            }
+            arr.forEach((el) => el.classList.remove("active__partner"));
+            arr[activePartner].classList.add('active__partner');
+        }
+        </script>
+</body>
+</html>

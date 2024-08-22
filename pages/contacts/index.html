@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./desktop.css" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Верхнее меню -->
+      <header class="header">
+        <a class="logo__link" href="../../index.html"
+          ><img
+            src="../../images/logo.png"
+            alt="Логотип компании Строительный век"
+            class="logo"
+        /></a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list__item">
+              <a href="../../index.html" style="text-decoration: underline">Главная</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../projects/index.html">Услуги</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../hangars/index.html">Проекты</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../company/index.html">О компании</a>
+            </li>
+            <li class="menu__list__item">
+              <a href="../contacts/index.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <a href="../menu/contacts-menu.html"
+          ><img
+            class="menu__burger"
+            src="../../images/burger.svg"
+            alt="Меню бургер"
+        /></a>
+        <div class="contacts">
+          <div class="contacts__item">Москва</div>
+          <div class="contacts__item">
+            <a class="contacts__item__phone" href="tel:+74959916000"
+              >+7 (495) 991-60-00</a
+            >
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <!-- Контакты -->
+        <section class="contacts__container">
+          <div class="contacts__header">контакты</div>
+          <div class="contacts__area">
+            <div class="contacts__buttons">
+              <div class="contacts__button active__button" onclick="changeActiveOffice()">Москва</div>
+              <div class="contacts__button" onclick="changeActiveOffice()">Новосибирск</div>
+            </div>
+            <div class="contacts__content">
+              <div class="map">
+                <iframe
+                  class="map__item active__map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.343113493789!2d37.61811777616264!3d55.769912490673974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6a2b8eeac7%3A0xc5f29ae7b895c54d!2z0KbQstC10YLQvdC-0Lkg0LEt0YAsIDExLCDRgdGC0YAuIDYsINCc0L7RgdC60LLQsCwgMTI3MDUx!5e0!3m2!1sru!2sru!4v1723914932510!5m2!1sru!2sru"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <iframe
+                  class="map__item"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.12349323773!2d82.90857997610748!3d55.02352804792594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5d4c8a80dfd%3A0x79993a964084992b!2z0J7QutGC0Y_QsdGA0YzRgdC60LDRjyDRg9C7LiwgMTDQkCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1723914984233!5m2!1sru!2sru"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <ul class="offices">
+                <ul class="office">
+                  <li class="town">москва</li>
+                  <li class="phone">+7 (495) 991-60-00</li>
+                  <li class="address">Цветной бульвар, 11. стр. 6</li>
+                </ul>
+                <ul class="office">
+                  <li class="town">новосибирск</li>
+                  <li class="phone">+7 (383) 383-03-38</li>
+                  <li class="address">ул. Октябрьская, 10а</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Подвал -->
+      <footer class="footer">
+        <div class="footer__logo__contacts">
+          <a class="footer__logo__link" href="./index.html"
+            ><img
+              src="../../images/logo.png"
+              alt="Логотип компании Строительный век"
+              class="footer__logo"
+          /></a>
+          <div class="footer__phone">
+            <a class="footer__phone__item" href="tel:+74959916000"
+              >+7 (495) 991-60-00</a
+            >
+          </div>
+          <div class="footer__email">
+            <a href="mailto:s_vek@list.ru">s_vek@list.ru</a>
+          </div>
+        </div>
+        <ul class="footer__menu__list">
+          <li class="footer__menu__item"><a href="#">Главная</a></li>
+          <li class="footer__menu__item">
+            <a href="./pages/company/index.html">О компании</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="./pages/projects/index.html">Услуги</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="./pages/hangars/index.html">Проекты</a>
+          </li>
+          <li class="footer__menu__item">
+            <a href="./pages/contacts/index.html">Контакты</a>
+          </li>
+          <li class="footer__menu__item"><a href="#">Сертификаты</a></li>
+          <li class="footer__menu__item"><a href="#partners">Партнеры</a></li>
+          <li class="footer__menu__item"><a href="#news">Новости</a></li>
+          <li class="footer__menu__item"><a href="#offices">Адрес</a></li>
+          <li class="footer__menu__item"><a href="#offices">Карта</a></li>
+        </ul>
+        <ul class="footer__offices__list">
+          <li class="footer__offices__item">
+            <div class="footer__offices__town">москва</div>
+            <div class="footer__offices__address">
+              Цветной бульвар, 11. стр. 6
+            </div>
+          </li>
+          <li class="footer__offices__item">
+            <div class="footer__offices__town">новосибирск</div>
+            <div class="footer__offices__address">ул. Октябрьская, 10а</div>
+          </li>
+        </ul>
+        <div class="requisites">
+          ООО “Строительный век” ОГРН 52989555 ИНН 689123456987
+        </div>
+      </footer>
+      <!-- Подвал для мобильной версии -->
+      <footer class="footer__mobile">
+        <div class="footer__mobile__logo">
+          <a class="footer__mobile__logo__link" href="../../index.html"
+            ><img
+              src="../../images/logo.png"
+              alt="Логотип компании Строительный век"
+              class="footer__mobile__logo__img"
+          /></a>
+        </div>
+        <div class="footer__mobile__email">
+          <a href="mailto:s_vek@list.ru">s_vek@list.ru</a>
+        </div>
+        <ul class="footer__mobile__phones">
+          <li class="footer__mobile__phone">
+            <a class="footer__mobile__phone__item" href="tel:+74959916000"
+              >+7 (495) 991-60-00</a
+            >
+          </li>
+          <li class="footer__mobile__phone">
+            <a class="footer__mobile__phone__item" href="tel:+73833830338"
+              >+7 (383) 383-03-38</a
+            >
+          </li>
+        </ul>
+        <ul class="footer__mobile__towns">
+          <li class="footer__mobile__town">москва</li>
+          <li class="footer__mobile__town">новосибирск</li>
+        </ul>
+        <div class="footer__mobile__requisites">
+          ООО “Строительный век” ОГРН 52989555 ИНН 689123456987
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Функция смены офиса и карты
+      function changeActiveOffice(e) {
+        let town;
+        document.addEventListener("click", (e) => {
+          Array.from(document.querySelectorAll(".contacts__button")).forEach(
+            (el) => el.classList.remove("active__button")
+          );
+          e.target.classList.add("active__button");
+          town = e.target.textContent;
+          console.log(town);
+          Array.from(document.querySelectorAll(".map__item")).forEach((el) =>
+            el.classList.remove("active__map")
+          );
+          console.log(Array.from(document.querySelectorAll(".map__item")));
+          if (town === "Москва") {
+            Array.from(
+              document.querySelectorAll(".map__item")
+            )[0].classList.add("active__map");
+          } else {
+            Array.from(
+              document.querySelectorAll(".map__item")
+            )[1].classList.add("active__map");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
